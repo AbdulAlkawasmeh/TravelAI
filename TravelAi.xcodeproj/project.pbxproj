@@ -29,9 +29,22 @@
 		C635FEB42D5BD675002C044F /* TravelAiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelAiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C635FEF02D5BE500002C044F /* Exceptions for "TravelAi" folder in "TravelAi" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C635FE992D5BD671002C044F /* TravelAi */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C635FE9C2D5BD671002C044F /* TravelAi */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C635FEF02D5BE500002C044F /* Exceptions for "TravelAi" folder in "TravelAi" target */,
+			);
 			path = TravelAi;
 			sourceTree = "<group>";
 		};

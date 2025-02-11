@@ -6,16 +6,27 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
+    @StateObject private var locationManager = LocationManager()
+    @State private var isShowingSplash = true
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            if isShowingSplash {
+                SplashScreen()
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                            withAnimation {
+                                isShowingSplash = false
+                            }
+                        }
+                    }
+            } else {
+                MainTabView()
+            }
         }
-        .padding()
     }
 }
 
